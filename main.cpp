@@ -1,12 +1,12 @@
 #include <iostream>
 using namespace std;
 void game(int number[]);
+void util(int number[]);
 
 int main(){
     int number[3];
-    
-    cout << "Enter a answer: ";
-    scanf("%1d%1d%1d", &number[0], &number[1], &number[2]);
+    util(number);
+    cout << "Answer is " << number[0] << number[1] << number[2] << '\n' ;
     game(number);
 
     cout << "You win!";
